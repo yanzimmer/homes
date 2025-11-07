@@ -1,0 +1,12 @@
+{
+  "preferred_engine": "paddleocr",
+  "paddleocr": {
+    "lang": "ch",
+    "use_angle_cls": true,
+    "ocr": {
+      "det": true,
+      "rec": true,
+      "cls": true
+    }
+  }
+}

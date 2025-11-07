@@ -1,0 +1,47 @@
+{
+    "enabled": true,
+    "advance_days": 32,
+    "notification_methods": [
+        "email"
+    ],
+    "tenant_notification_methods": [],
+    "landlord_notification_methods": [],
+    "smtp_config": {
+        "server": "smtp.qq.com",
+        "port": 587,
+        "username": "yanzimmer@qq.com",
+        "password": "bdncmdmptrhibdhe",
+        "use_tls": true
+    },
+    "sms_config": {
+        "secret_id": "1401054168",
+        "secret_key": "c998dbf1b66ce40cb6b62f10e9484b6a",
+        "app_id": "1401054168",
+        "sign_name": "675518",
+        "tenant_template_id": "2548266",
+        "landlord_template_id": "2548267",
+        "tenant_template_text": "",
+        "landlord_template_text": ""
+    },
+    "tenant_email_config": {
+        "sender": "system@example.com",
+        "subject": "租期即将到期通知",
+        "template": "尊敬的租户 {tenant_name}，您在 {building} {room_no} 的租期将于 {expiry_date} 到期，请及时续租或办理退租手续，房东联系电话: {contact_phone}。",
+        "recipients": []
+    },
+    "landlord_email_config": {
+        "sender": "system@example.com",
+        "subject": "租户租期即将到期通知",
+        "template": "尊敬的房东 {landlord_name}，您的租户 {tenant_name} 在 {building} {room_no} 的租期将于 {expiry_date} 到期，月租金 {rent_amount} 元，请及时联系租户确认是否续租。",
+        "recipients": []
+    },
+    "landlords": [
+        {
+            "email": "157787824@qq.com",
+            "name": "穆新禹",
+            "phone": "15286304124"
+        }
+    ],
+    "last_updated": "2025-11-07 13:00:43",
+    "reminder_count": 2
+}

@@ -1,0 +1,21 @@
+services:
+  homes:
+    image: homes:latest
+    build: .
+    container_name: homes
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data/homes_sql:/app/Backend-System/sql
+      - ./data/homes_cfg:/app/Backend-System/config
+      - ./data/homes_uploads:/app/Backend-System/static/uploads
+    environment:
+      - TZ=Asia/Shanghai
+    # 以前台模式启动，并显式指定主配置文件（包含 conf.d）
+    command: ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+
+volumes:
+  homes_sql:
+  homes_cfg:
+  homes_uploads:

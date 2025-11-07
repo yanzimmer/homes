@@ -1,0 +1,4 @@
+# 排除环境数据，避免被打包进镜像
+Backend-System/sql/hotel.db
+Backend-System/config/notification_config.json
+Backend-System/config/ocr_config.json
